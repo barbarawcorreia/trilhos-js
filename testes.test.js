@@ -1,7 +1,10 @@
 const trilhos = require('./main')
 
 test('LIFO',() => {
-    expect(trilhos()).toEqual()
+    var valores_entrada_cte = [1,2,3,4,5]
+    var valor_da_saida_esperado = [5,4,3,2,1]
+
+    expect(trilhos.vagoes_lifo(valores_entrada_cte)).toEqual(valor_da_saida_esperado)
 })
 
 
